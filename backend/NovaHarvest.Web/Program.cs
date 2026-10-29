@@ -35,4 +35,36 @@ app.MapGet("/", () => Results.Content(
     """,
     "text/html; charset=utf-8"));
 
+app.MapGet("/about", () => Results.Content(
+    $"""
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>NovaHarvest - Acerca de</title>
+        <link rel="stylesheet" href="/css/site.css">
+    </head>
+    <body>
+        <header>
+            <img src="/img/logo.png" alt="Logotipo de NovaHarvest" width="100">
+            <p>NovaHarvest</p>
+            <nav>
+                <a href="/">Inicio</a>
+                <a href="/about">Acerca de</a>
+                <a href="/status">Estado</a>
+            </nav>
+        </header>
+        <main>
+            <h1>Acerca de</h1>
+            <p>NovaHarvest es un proyecto para fomentar el aprovechamiento de excedentes alimentarios del Valle del Jerte.</p>
+            <p>Centro educativo: I.E.S. Valle del Jerte, Plasencia.</p>
+            <p>Autor: Enrique Montero Acosta.</p>
+            <p>Versión: 0.1.0.</p>
+        </main>
+        <footer>NovaHarvest · IES Valle del Jerte · {DateTime.Now.Year}</footer>
+    </body>
+    </html>
+    """,
+    "text/html; charset=utf-8"));
+
 app.Run();

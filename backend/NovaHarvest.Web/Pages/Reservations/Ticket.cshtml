@@ -1,0 +1,27 @@
+@page "/ticket"
+@model NovaHarvest.Web.Pages.Reservations.TicketModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>NovaHarvest - Justificante de reserva</title>
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <h1>Justificante de reserva</h1>
+
+    <p>Reserva: @Model.Reservation</p>
+
+    <p>Producto: @Model.Product</p>
+
+    <p>Kilos: @Model.Kg</p>
+
+    <p>Recogida: @Model.Pickup</p>
+
+    <p>Generado el @Model.GeneratedAt.ToString("dd/MM/yyyy HH:mm")</p>
+</body>
+</html>

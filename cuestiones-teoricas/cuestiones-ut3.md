@@ -171,13 +171,31 @@ En mi `SurplusModel` calculo los siguientes datos:
 
 He comprobado qué ocurre al utilizar `decimal`: con una prueba de 12,5 kg y cajas de 5 kg, la división dio `2,5` y el resto también dio `2,5`. Por tanto, el resultado ya no indica directamente las cajas completas.
 
+![captura39](capturas/captura39.png)
+
+![captura40](capturas/captura40.png)
+
+![captura41](capturas/captura41.png)
+
 ![captura19](capturas/captura19.png)
 
 Al mostrar directamente un `bool` con Razor, aparece `True` o `False`. En mi prueba apareció `False`, porque todavía quedaban kilos disponibles.
 
+![captura42](capturas/captura42.png)
+
+![captura43](capturas/captura43.png)
+
+![captura44](capturas/captura44.png)
+
 ![captura17](capturas/captura17.png)
 
 Al mostrar directamente un `null`, Razor no escribe ningún contenido después del texto. Lo he comprobado poniendo la nota del productor a `null`. Por eso utilizo `?? "Sin observaciones"` para mostrar un texto cuando falta la nota.
+
+![captura45](capturas/captura45.png)
+
+![captura46](capturas/captura46.png)
+
+![captura47](capturas/captura47.png)
 
 ![captura18](capturas/captura18.png)
 
